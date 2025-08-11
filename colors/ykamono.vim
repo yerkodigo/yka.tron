@@ -63,6 +63,12 @@ let s:chicagoGold1 = {'gui': '#8E700B', 'cterm256': '136'}
 let s:chicagoGold2 = {'gui': '#D7AF00', 'cterm256': '178'}
 let s:chicagoBrown = {'gui': '#5F5F00', 'cterm256': '58'}
 let s:chicagoRed = {'gui': '#D70000', 'cterm256': '160'}
+let s:customDarkBg = {'gui': '#161616', 'cterm256': '233'}
+let s:customDarkFont = {'gui': '#eeba2c', 'cterm256': '178'}
+let s:customLightBg = {'gui': '#f9f4e6', 'cterm256': '230'}
+let s:customLightFont = {'gui': '#161616', 'cterm256': '233'}
+let s:customDarkComment = {'gui': '#ecdeb3', 'cterm256': '223'}
+let s:customLightComment = {'gui': '#262626', 'cterm256': '235'}
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 
 " ==========================
@@ -82,7 +88,7 @@ if &background == 'light'
   call <sid>hi('IncSearch', s:chicagoGold2, s:chicagoGray1, 'none')
   call <sid>hi('LineNr', s:chicagoBlack3, s:chicagoGray6, 'none')
   call <sid>hi('MatchParen', s:chicagoBlack1, s:chicagoGray4, 'none')
-  call <sid>hi('Normal', s:chicagoBlack1, s:chicagoWhite2, 'none')
+  call <sid>hi('Normal', s:customLightFont, s:customLightBg, 'none')
   call <sid>hi('Pmenu', s:chicagoBlack1, s:chicagoGray6, 'none')
   call <sid>hi('PmenuSel', s:chicagoWhite2, s:chicagoGray4, 'none')
   call <sid>hi('Search', s:chicagoGold2, s:chicagoGray1, 'none')
@@ -95,7 +101,7 @@ if &background == 'light'
   " General
   call <sid>hi('Boolean', s:chicagoBlack1, s:none, 'none')
   call <sid>hi('Character', s:chicagoBlack1, s:none, 'none')
-  call <sid>hi('Comment', s:chicagoGray3, s:none, 'none')
+  call <sid>hi('Comment', s:customLightComment, s:none, 'italic')
   call <sid>hi('Conditional', s:chicagoBlack1, s:none, 'none')
   call <sid>hi('Constant', s:chicagoBlack1, s:none, 'none')
   call <sid>hi('Define', s:chicagoBlack1, s:none, 'none')
@@ -172,7 +178,7 @@ else
   call <sid>hi('IncSearch', s:chicagoBlack2, s:chicagoGold1, 'none')
   call <sid>hi('LineNr', s:chicagoGray4, s:chicagoBlack4, 'none')
   call <sid>hi('MatchParen', s:chicagoWhite1, s:chicagoGray3, 'none')
-  call <sid>hi('Normal', s:chicagoWhite1, s:chicagoBlack2, 'none')
+  call <sid>hi('Normal', s:customDarkFont, s:customDarkBg, 'none')
   call <sid>hi('Pmenu', s:none, s:chicagoBlack4, 'none')
   call <sid>hi('PmenuSel', s:none, s:chicagoGray2, 'none')
   call <sid>hi('Search', s:chicagoBlack2, s:chicagoGold1, 'none')
@@ -185,7 +191,7 @@ else
   " General
   call <sid>hi('Boolean', s:chicagoWhite1, s:none, 'none')
   call <sid>hi('Character', s:chicagoWhite1, s:none, 'none')
-  call <sid>hi('Comment', s:chicagoGray3, s:none, 'none')
+  call <sid>hi('Comment', s:customDarkComment, s:none, 'italic')
   call <sid>hi('Conditional', s:chicagoWhite1, s:none, 'none')
   call <sid>hi('Constant', s:chicagoWhite1, s:none, 'none')
   call <sid>hi('Define', s:chicagoWhite1, s:none, 'none')
