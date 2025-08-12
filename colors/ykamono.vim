@@ -71,9 +71,9 @@ let s:customDarkComment = {'gui': '#544210', 'cterm256': '223'}
 " #FE5516 #F5F5DC #E8D9BB
 " #F9F8EF #FB4F14 #E9D6BD "#A3C0BD #104A65 #13181B
 
-let s:customLightBg = {'gui': '#F9F8EF', 'cterm256': '223'}
-let s:customLightFont = {'gui': '#13181B', 'cterm256': '235'}
-let s:customLightComment = {'gui': '#E9D6BD', 'cterm256': '239'}
+let s:customLightBg = {'gui': '#FFFFFF', 'cterm256': '223'}
+let s:customLightFont = {'gui': '#262626', 'cterm256': '235'}
+let s:customLightComment = {'gui': '#D0D0D0', 'cterm256': '239'}
 
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 
