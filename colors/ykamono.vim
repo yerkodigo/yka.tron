@@ -44,10 +44,8 @@ endfun
 " ==========================
 " Color Variables
 " ==========================
-" let s:chicagoBlack1 = {'gui': '#080808', 'cterm256': '232'}
-" let s:chicagoBlack2 = {'gui': '#121212', 'cterm256': '233'}
-let s:chicagoBlack1 = {'gui': '#eeba2c', 'cterm256': '232'}
-let s:chicagoBlack2 = {'gui': '#eeba2c', 'cterm256': '233'}
+let s:chicagoBlack1 = {'gui': '#080808', 'cterm256': '232'}
+let s:chicagoBlack2 = {'gui': '#121212', 'cterm256': '233'}
 let s:chicagoBlack3 = {'gui': '#1c1c1c', 'cterm256': '234'}
 let s:chicagoBlack4 = {'gui': '#262626', 'cterm256': '235'}
 let s:chicagoGray1 = {'gui': '#3E3D32', 'cterm256': '237'}
