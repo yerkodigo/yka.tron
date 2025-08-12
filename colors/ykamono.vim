@@ -63,12 +63,15 @@ let s:chicagoGold1 = {'gui': '#8E700B', 'cterm256': '136'}
 let s:chicagoGold2 = {'gui': '#D7AF00', 'cterm256': '178'}
 let s:chicagoBrown = {'gui': '#5F5F00', 'cterm256': '58'}
 let s:chicagoRed = {'gui': '#D70000', 'cterm256': '160'}
+
 let s:customDarkBg = {'gui': '#161616', 'cterm256': '233'}
 let s:customDarkFont = {'gui': '#eeba2c', 'cterm256': '178'}
-let s:customLightBg = {'gui': '#ecdeb3', 'cterm256': '223'}
+let s:customDarkComment = {'gui': '#544210', 'cterm256': '223'}
+
+let s:customLightBg = {'gui': '#FFFDF5', 'cterm256': '223'}
 let s:customLightFont = {'gui': '#262626', 'cterm256': '235'}
-let s:customDarkComment = {'gui': '#ecdeb3', 'cterm256': '223'}
-let s:customLightComment = {'gui': '#49483E', 'cterm256': '239'}
+let s:customLightComment = {'gui': '#E3E3E3', 'cterm256': '239'}
+
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 
 " ==========================
