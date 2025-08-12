@@ -70,7 +70,7 @@ let s:customDarkComment = {'gui': '#544210', 'cterm256': '223'}
 
 let s:customLightBg = {'gui': '#FFFDF5', 'cterm256': '223'}
 let s:customLightFont = {'gui': '#262626', 'cterm256': '235'}
-let s:customLightComment = {'gui': '#E3E3E3', 'cterm256': '239'}
+let s:customLightComment = {'gui': '#C4C4C4', 'cterm256': '239'}
 
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 
