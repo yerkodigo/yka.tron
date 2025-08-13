@@ -1,20 +1,17 @@
 "
 "
 "
-"      88b           d88 88
-"      888b         d888 ""
-"      88`8b       d8'88
-"      88 `8b     d8' 88 88  ,adPPYba, ,adPPYba,
-"      88  `8b   d8'  88 88 a8P_____88 I8[    ""
-"      88   `8b d8'   88 88 8PP"""""""  `"Y8ba,
-"      88    `888'    88 88 "8b,   ,aa aa    ]8I
-"      88     `8'     88 88  `"Ybbd8"' `"YbbdP"'
+"      ██╗   ██╗██╗  ██╗ █████╗    ███╗   ███╗ ██████╗ ███╗   ██╗ ██████╗ 
+"      ╚██╗ ██╔╝██║ ██╔╝██╔══██╗   ████╗ ████║██╔═══██╗████╗  ██║██╔═══██╗
+"       ╚████╔╝ █████╔╝ ███████║   ██╔████╔██║██║   ██║██╔██╗ ██║██║   ██║
+"        ╚██╔╝  ██╔═██╗ ██╔══██║   ██║╚██╔╝██║██║   ██║██║╚██╗██║██║   ██║
+"         ██║   ██║  ██╗██║  ██║██╗██║ ╚═╝ ██║╚██████╔╝██║ ╚████║╚██████╔╝
+"         ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ 
+"      A fork from jaredgorski/Mies.vim
 "
-"
-"
-" File:       mies.vim
-" Maintainer: Jared Gorski <jaredgorski6@gmail.com>
-" Repository: https://github.com/jaredgorski/Mies.vim
+" File:       ykamono.vim
+" Maintainer: Yerko Cortes <yerkodigo@gmail.com>
+" Repository: https://github.com/yerkodigo/yka.mono
 " License:    MIT
 
 scriptencoding utf-8
@@ -46,14 +43,14 @@ endfun
 " ==========================
 " Light
 let s:globalTextColor = {'gui': '#332a00', 'cterm256': '232'}
-let s:globalBackgroundColor = {'gui': '#fff6cc', 'cterm256': '231'}
-let s:lineNumberColor = {'gui': '#008700', 'cterm256': '234'}
+let s:globalBackgroundColor = {'gui': '#fffcf0', 'cterm256': '231'}
+let s:lineNumberColor = {'gui': '#332a00', 'cterm256': '234'}
 let s:diffAddBackgroundColor = {'gui': '#008700', 'cterm256': '28'}
 
 " Dark
 let s:globalTextColorDark = {'gui': '#ffd000', 'cterm256': '252'}
-let s:globalBackgroundColorDark = {'gui': '#1a1500', 'cterm256': '233'}
-let s:lineNumberColorDark = {'gui': '#4d3e00', 'cterm256': '246'}
+let s:globalBackgroundColorDark = {'gui': '#0f0c00', 'cterm256': '233'}
+let s:lineNumberColorDark = {'gui': '#ffd000', 'cterm256': '246'}
 let s:diffAddBackgroundColorDark = {'gui': '#00af5f', 'cterm256': '35'}
 
 let s:cursorLineBackground = {'gui': '#1c1c1c', 'cterm256': '234'}
