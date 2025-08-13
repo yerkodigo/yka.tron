@@ -89,7 +89,10 @@ if &background == 'light'
   call <sid>hi('IncSearch', s:warningTextColor, s:statusLineBackgroundColor, 'none')
   call <sid>hi('LineNr', s:lineNumberColor, s:menuTextColor, 'none')
   call <sid>hi('MatchParen', s:globalTextColor, s:menuBackgroundColor, 'none')
-  call <sid>hi('Normal', s:globalTextColor, s:globalBackgroundColor, 'none')
+
+  call <sid>hi('Normal', s:globalTextColor, s:globalTextColor, 'none')
+  " call <sid>hi('Normal', s:globalTextColor, s:globalBackgroundColor, 'none')
+  
   call <sid>hi('Pmenu', s:globalTextColor, s:menuTextColor, 'none')
   call <sid>hi('PmenuSel', s:globalBackgroundColor, s:menuBackgroundColor, 'none')
   call <sid>hi('Search', s:warningTextColor, s:statusLineBackgroundColor, 'none')
