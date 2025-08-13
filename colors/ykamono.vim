@@ -39,38 +39,38 @@ fun! <sid>hi(group, fg, bg, attr)
 endfun
 
 " ==========================
-" Color Variables - BASE: #ffd000 - https://www.hslpicker.com/#ffd000
+" Color Variables - BASE: #ffd000 (escala de amarillos)
 " ==========================
 " Light
-let s:globalTextColor                   = {'gui': '#332a00', 'cterm256': '232'} " Color del texto general (tema claro)
-let s:globalBackgroundColor             = {'gui': '#fffcf0', 'cterm256': '231'} " Color de fondo general (tema claro)
-let s:lineNumberColor                   = {'gui': '#332a00', 'cterm256': '234'} " Color de los números de línea (inactivos)
-let s:diffAddBackgroundColor            = {'gui': '#008700', 'cterm256': '28'}  " Fondo para líneas añadidas en diffs
-let s:cursorLineBackground              = {'gui': '#1c1c1c', 'cterm256': '234'} " Fondo oscuro usado para Cursor y avisos
-let s:secondaryBackgroundColor          = {'gui': '#262626', 'cterm256': '235'} " Fondo secundario (folds, áreas resaltadas)
-let s:statusLineBackgroundColor         = {'gui': '#3E3D32', 'cterm256': '237'} " Fondo de la barra de estado
-let s:visualSelectionColor              = {'gui': '#49483E', 'cterm256': '239'} " Fondo de selección visual y ColorColumn
-let s:commentTextColor                  = {'gui': '#767676', 'cterm256': '243'} " Color del texto de comentarios
-let s:lineNumberActiveColor             = {'gui': '#B0B0B0', 'cterm256': '249'} " Fondo/resaltado de la línea actual y selección
-let s:menuTextColor                     = {'gui': '#C6C6C6', 'cterm256': '251'} " Color de texto de menús y fondos claros asociados
-let s:diffTextHighlightColor            = {'gui': '#5F8787', 'cterm256': '66'}  " Fondo para resaltar texto cambiado (DiffText)
-let s:warningBackgroundColor            = {'gui': '#8E700B', 'cterm256': '136'} " Fondo de advertencias/búsquedas
-let s:warningTextColor                  = {'gui': '#D7AF00', 'cterm256': '178'} " Texto de advertencias y resaltado de búsquedas
-let s:diffChangeBackgroundColor         = {'gui': '#5F5F00', 'cterm256': '58'}  " Fondo para líneas modificadas en diffs
-let s:errorTextColor                    = {'gui': '#D70000', 'cterm256': '160'} " Texto de errores
-let s:none                              = {'gui': 'NONE', 'cterm256': 'NONE'}   " Sin color (NONE)
+let s:globalTextColor                   = {'gui': '#2a2300', 'cterm256': '94'}   " Color del texto general (tinta cálida oscura)
+let s:globalBackgroundColor             = {'gui': '#fffcf0', 'cterm256': '231'}  " Fondo general (papel cálido)
+let s:lineNumberColor                   = {'gui': '#806f00', 'cterm256': '136'}  " Números de línea inactivos (mostaza)
+let s:diffAddBackgroundColor            = {'gui': '#008700', 'cterm256': '28'}   " Fondo para líneas añadidas en diffs (verde)
+let s:cursorLineBackground              = {'gui': '#3a3000', 'cterm256': '94'}   " Fondo base para elementos oscuros (cursor, avisos)
+let s:secondaryBackgroundColor          = {'gui': '#262000', 'cterm256': '235'}  " Fondo secundario oscuro y cálido (folds, paneles)
+let s:statusLineBackgroundColor         = {'gui': '#e6c200', 'cterm256': '178'}  " Fondo de la barra de estado (ámbar)
+let s:visualSelectionColor              = {'gui': '#3a3000', 'cterm256': '58'}   " Fondo de selección visual (solo tema oscuro usa esta var)
+let s:commentTextColor                  = {'gui': '#8a8840', 'cterm256': '143'}  " Color del texto de comentarios (oliva suave)
+let s:lineNumberActiveColor             = {'gui': '#ffe8a0', 'cterm256': '229'}  " Resaltado de línea actual / visual en claro
+let s:menuTextColor                     = {'gui': '#fff1b8', 'cterm256': '230'}  " Texto claro en fondos oscuros y fondo de menús en claro
+let s:diffTextHighlightColor            = {'gui': '#664d00', 'cterm256': '94'}   " Fondo para resaltar texto cambiado (DiffText)
+let s:warningBackgroundColor            = {'gui': '#ffd000', 'cterm256': '220'}  " Fondo de advertencias/búsquedas (amarillo base)
+let s:warningTextColor                  = {'gui': '#5a4500', 'cterm256': '94'}   " Texto de advertencias (marrón oscuro cálido)
+let s:diffChangeBackgroundColor         = {'gui': '#fff1a8', 'cterm256': '229'}  " Fondo para líneas modificadas en diffs (amarillo pálido)
+let s:errorTextColor                    = {'gui': '#D70000', 'cterm256': '160'}  " Texto de errores (rojo)
+let s:none                              = {'gui': 'NONE', 'cterm256': 'NONE'}    " Sin color (NONE)
 
 " Dark
-let s:globalTextColorDark               = {'gui': '#ffd000', 'cterm256': '252'} " Color del texto general (tema oscuro)
-let s:globalBackgroundColorDark         = {'gui': '#0f0c00', 'cterm256': '233'} " Color de fondo general (tema oscuro)
-let s:lineNumberColorDark               = {'gui': '#ffd000', 'cterm256': '246'} " Color de los números de línea (tema oscuro)
-let s:diffAddBackgroundColorDark        = {'gui': '#00af5f', 'cterm256': '35'}  " Fondo para líneas añadidas en diffs (oscuro)
+let s:globalTextColorDark               = {'gui': '#ffd000', 'cterm256': '220'}  " Color del texto general (tema oscuro, amarillo base)
+let s:globalBackgroundColorDark         = {'gui': '#0f0c00', 'cterm256': '233'}  " Fondo general (negro cálido)
+let s:lineNumberColorDark               = {'gui': '#a88f00', 'cterm256': '178'}  " Números de línea (tema oscuro, mostaza)
+let s:diffAddBackgroundColorDark        = {'gui': '#00af5f', 'cterm256': '35'}   " Fondo para líneas añadidas (oscuro)
 
-" Additional aliases for colors that serve multiple purposes
-let s:cursorLineBackgroundLight         = s:globalTextColor                     " Fondo de la línea del cursor (tema claro)
-let s:menuBackgroundColor               = s:lineNumberColorDark                 " Fondo de menús/selecciones y separadores
-let s:nonTextColor                      = s:statusLineBackgroundColor           " Color para caracteres no textuales (~, espacios)
-let s:cursorBackgroundColor             = s:globalTextColorDark                 " Fondo del cursor
+" Aliases y utilitarios
+let s:cursorLineBackgroundLight         = {'gui': '#fff5bf', 'cterm256': '229'}  " Fondo suave para CursorLine/Column en claro
+let s:menuBackgroundColor               = {'gui': '#806a00', 'cterm256': '136'}  " Fondo de menús/selecciones y separadores (ámbar oscuro)
+let s:nonTextColor                      = {'gui': '#4d3f00', 'cterm256': '94'}   " Carácteres no textuales (~, espacios) en claro
+let s:cursorBackgroundColor             = {'gui': '#ffd000', 'cterm256': '220'}  " Fondo del cursor/acentos brillantes
 
 " ==========================
 " Definitions
