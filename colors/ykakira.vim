@@ -1,19 +1,19 @@
 "
 "
 "
-"      ██╗   ██╗██╗  ██╗ █████╗ ███╗   ███╗ ██████╗ ███╗   ██╗ ██████╗ 
-"      ╚██╗ ██╔╝██║ ██╔╝██╔══██╗████╗ ████║██╔═══██╗████╗  ██║██╔═══██╗
-"       ╚████╔╝ █████╔╝ ███████║██╔████╔██║██║   ██║██╔██╗ ██║██║   ██║
-"        ╚██╔╝  ██╔═██╗ ██╔══██║██║╚██╔╝██║██║   ██║██║╚██╗██║██║   ██║
-"         ██║   ██║  ██╗██║  ██║██║ ╚═╝ ██║╚██████╔╝██║ ╚████║╚██████╔╝
-"         ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ 
+"      ██╗   ██╗██╗  ██╗ █████╗ ██╗  ██╗██╗██████╗  █████╗ 
+"      ╚██╗ ██╔╝██║ ██╔╝██╔══██╗██║ ██╔╝██║██╔══██╗██╔══██╗
+"       ╚████╔╝ █████╔╝ ███████║█████╔╝ ██║██████╔╝███████║
+"        ╚██╔╝  ██╔═██╗ ██╔══██║██╔═██╗ ██║██╔══██╗██╔══██║
+"         ██║   ██║  ██╗██║  ██║██║  ██╗██║██║  ██║██║  ██║
+"         ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
 "      A fork from jaredgorski/Mies.vim
 "
-"      >>> Inspirado en el colorscheme de jaredgorski/Mies.vim <<<
+"      >>> Inspirado en la pelicula "Akira" de Katsuhiro Otomo <<<
 "
-" File:       ykamono.vim
+" File:       ykakira.vim
 " Maintainer: Yerko Cortes <yerkodigo@gmail.com>
-" Repository: https://github.com/yerkodigo/yka.mono
+" Repository: https://github.com/yerkodigo/ykakira
 " License:    MIT
 
 scriptencoding utf-8
@@ -23,7 +23,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name="yka.mono"
+let g:colors_name="ykakira"
 
 " ==========================
 " Highlighting Function
@@ -41,23 +41,23 @@ fun! <sid>hi(group, fg, bg, attr)
 endfun
 
 " ==========================
-" Color Variables - BASE: #222526 #353A3E #E0E0E0 #1A1A1A #BFBFBF
+" Color Variables - BASE: #EFE2D2 #A9B6B8 #1F1C19 #AE5739 #D55E42 #E55A33
 " ==========================
 " Light
-let s:l_fg       = {'gui': '#1A1A1A', 'cterm256': '94'}   " Texto principal (oscuro cálido)
-let s:l_bg       = {'gui': '#E0E0E0', 'cterm256': '231'}  " Fondo principal claro
-let s:l_muted    = {'gui': '#353A3E', 'cterm256': '143'}  " Texto atenuado (comentarios, nontext)
+let s:l_fg       = {'gui': '#1F1C19', 'cterm256': '94'}   " Texto principal (oscuro cálido)
+let s:l_bg       = {'gui': '#EFE2D2', 'cterm256': '231'}  " Fondo principal claro
+let s:l_muted    = {'gui': '#AE5739', 'cterm256': '143'}  " Texto atenuado (comentarios, nontext)
 let s:l_accent   = {'gui': '#ffd000', 'cterm256': '220'}  " Acento principal (amarillo base)
-let s:l_surface  = {'gui': '#BFBFBF', 'cterm256': '229'}  " Superficie sutil (selección suave, cursorline)
-let s:l_danger   = {'gui': '#d70000', 'cterm256': '160'}  " Error/alerta crítica
+let s:l_surface  = {'gui': '#A9B6B8', 'cterm256': '229'}  " Superficie sutil (selección suave, cursorline)
+let s:l_danger   = {'gui': '#E55A33', 'cterm256': '160'}  " Error/alerta crítica
 
 " Dark
-let s:d_fg       = {'gui': '#E0E0E0', 'cterm256': '220'}  " Texto principal en oscuro
-let s:d_bg       = {'gui': '#1A1A1A', 'cterm256': '233'}  " Fondo principal oscuro cálido
-let s:d_muted    = {'gui': '#BFBFBF', 'cterm256': '178'}  " Texto atenuado en oscuro (comentarios, nontext)
+let s:d_fg       = {'gui': '#EFE2D2', 'cterm256': '220'}  " Texto principal en oscuro
+let s:d_bg       = {'gui': '#1F1C19', 'cterm256': '233'}  " Fondo principal oscuro cálido
+let s:d_muted    = {'gui': '#A9B6B8', 'cterm256': '178'}  " Texto atenuado en oscuro (comentarios, nontext)
 let s:d_accent   = {'gui': '#ffd000', 'cterm256': '220'}  " Acento principal en oscuro
-let s:d_surface  = {'gui': '#353A3E', 'cterm256': '58'}   " Superficie sutil en oscuro (selección suave, cursorline)
-let s:d_danger   = {'gui': '#ff5f5f', 'cterm256': '203'}  " Error/alerta crítica en oscuro
+let s:d_surface  = {'gui': '#AE5739', 'cterm256': '58'}   " Superficie sutil en oscuro
+let s:d_danger   = {'gui': '#A9B6B8', 'cterm256': '203'}  " Error/alerta crítica en oscuro
 
 let s:none       = {'gui': 'NONE', 'cterm256': 'NONE'}
 
