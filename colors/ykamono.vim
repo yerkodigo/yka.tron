@@ -42,36 +42,35 @@ endfun
 " Color Variables - BASE: #ffd000 - https://www.hslpicker.com/#ffd000
 " ==========================
 " Light
-let s:globalTextColor = {'gui': '#332a00', 'cterm256': '232'}
-let s:globalBackgroundColor = {'gui': '#fffcf0', 'cterm256': '231'}
-let s:lineNumberColor = {'gui': '#332a00', 'cterm256': '234'}
-let s:diffAddBackgroundColor = {'gui': '#008700', 'cterm256': '28'}
+let s:globalTextColor                   = {'gui': '#332a00', 'cterm256': '232'} " Color del texto general (tema claro)
+let s:globalBackgroundColor             = {'gui': '#fffcf0', 'cterm256': '231'} " Color de fondo general (tema claro)
+let s:lineNumberColor                   = {'gui': '#332a00', 'cterm256': '234'} " Color de los números de línea (inactivos)
+let s:diffAddBackgroundColor            = {'gui': '#008700', 'cterm256': '28'}  " Fondo para líneas añadidas en diffs
+let s:cursorLineBackground              = {'gui': '#1c1c1c', 'cterm256': '234'} " Fondo oscuro usado para Cursor y avisos
+let s:secondaryBackgroundColor          = {'gui': '#262626', 'cterm256': '235'} " Fondo secundario (folds, áreas resaltadas)
+let s:statusLineBackgroundColor         = {'gui': '#3E3D32', 'cterm256': '237'} " Fondo de la barra de estado
+let s:visualSelectionColor              = {'gui': '#49483E', 'cterm256': '239'} " Fondo de selección visual y ColorColumn
+let s:commentTextColor                  = {'gui': '#767676', 'cterm256': '243'} " Color del texto de comentarios
+let s:lineNumberActiveColor             = {'gui': '#B0B0B0', 'cterm256': '249'} " Fondo/resaltado de la línea actual y selección
+let s:menuTextColor                     = {'gui': '#C6C6C6', 'cterm256': '251'} " Color de texto de menús y fondos claros asociados
+let s:diffTextHighlightColor            = {'gui': '#5F8787', 'cterm256': '66'}  " Fondo para resaltar texto cambiado (DiffText)
+let s:warningBackgroundColor            = {'gui': '#8E700B', 'cterm256': '136'} " Fondo de advertencias/búsquedas
+let s:warningTextColor                  = {'gui': '#D7AF00', 'cterm256': '178'} " Texto de advertencias y resaltado de búsquedas
+let s:diffChangeBackgroundColor         = {'gui': '#5F5F00', 'cterm256': '58'}  " Fondo para líneas modificadas en diffs
+let s:errorTextColor                    = {'gui': '#D70000', 'cterm256': '160'} " Texto de errores
+let s:none                              = {'gui': 'NONE', 'cterm256': 'NONE'}   " Sin color (NONE)
 
 " Dark
-let s:globalTextColorDark = {'gui': '#ffd000', 'cterm256': '252'}
-let s:globalBackgroundColorDark = {'gui': '#0f0c00', 'cterm256': '233'}
-let s:lineNumberColorDark = {'gui': '#ffd000', 'cterm256': '246'}
-let s:diffAddBackgroundColorDark = {'gui': '#00af5f', 'cterm256': '35'}
-
-let s:cursorLineBackground = {'gui': '#1c1c1c', 'cterm256': '234'}
-let s:secondaryBackgroundColor = {'gui': '#262626', 'cterm256': '235'}
-let s:statusLineBackgroundColor = {'gui': '#3E3D32', 'cterm256': '237'}
-let s:visualSelectionColor = {'gui': '#49483E', 'cterm256': '239'}
-let s:commentTextColor = {'gui': '#767676', 'cterm256': '243'}
-let s:lineNumberActiveColor = {'gui': '#B0B0B0', 'cterm256': '249'}
-let s:menuTextColor = {'gui': '#C6C6C6', 'cterm256': '251'}
-let s:diffTextHighlightColor = {'gui': '#5F8787', 'cterm256': '66'}
-let s:warningBackgroundColor = {'gui': '#8E700B', 'cterm256': '136'}
-let s:warningTextColor = {'gui': '#D7AF00', 'cterm256': '178'}
-let s:diffChangeBackgroundColor = {'gui': '#5F5F00', 'cterm256': '58'}
-let s:errorTextColor = {'gui': '#D70000', 'cterm256': '160'}
-let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
+let s:globalTextColorDark               = {'gui': '#ffd000', 'cterm256': '252'} " Color del texto general (tema oscuro)
+let s:globalBackgroundColorDark         = {'gui': '#0f0c00', 'cterm256': '233'} " Color de fondo general (tema oscuro)
+let s:lineNumberColorDark               = {'gui': '#ffd000', 'cterm256': '246'} " Color de los números de línea (tema oscuro)
+let s:diffAddBackgroundColorDark        = {'gui': '#00af5f', 'cterm256': '35'}  " Fondo para líneas añadidas en diffs (oscuro)
 
 " Additional aliases for colors that serve multiple purposes
-let s:cursorLineBackgroundLight = s:globalTextColorDark
-let s:menuBackgroundColor = s:lineNumberColorDark
-let s:nonTextColor = s:statusLineBackgroundColor
-let s:cursorBackgroundColor = s:globalTextColorDark
+let s:cursorLineBackgroundLight         = s:globalTextColor                     " Fondo de la línea del cursor (tema claro)
+let s:menuBackgroundColor               = s:lineNumberColorDark                 " Fondo de menús/selecciones y separadores
+let s:nonTextColor                      = s:statusLineBackgroundColor           " Color para caracteres no textuales (~, espacios)
+let s:cursorBackgroundColor             = s:globalTextColorDark                 " Fondo del cursor
 
 " ==========================
 " Definitions
@@ -103,7 +102,7 @@ if &background == 'light'
   " General
   call <sid>hi('Boolean', s:globalTextColor, s:none, 'none')
   call <sid>hi('Character', s:globalTextColor, s:none, 'none')
-  call <sid>hi('Comment', s:commentTextColor, s:none, 'none')
+  call <sid>hi('Comment', s:commentTextColor, s:none, 'italic')
   call <sid>hi('Conditional', s:globalTextColor, s:none, 'none')
   call <sid>hi('Constant', s:globalTextColor, s:none, 'none')
   call <sid>hi('Define', s:globalTextColor, s:none, 'none')
@@ -193,7 +192,7 @@ else
   " General
   call <sid>hi('Boolean', s:globalTextColorDark, s:none, 'none')
   call <sid>hi('Character', s:globalTextColorDark, s:none, 'none')
-  call <sid>hi('Comment', s:commentTextColor, s:none, 'none')
+  call <sid>hi('Comment', s:commentTextColor, s:none, 'italic')
   call <sid>hi('Conditional', s:globalTextColorDark, s:none, 'none')
   call <sid>hi('Constant', s:globalTextColorDark, s:none, 'none')
   call <sid>hi('Define', s:globalTextColorDark, s:none, 'none')
