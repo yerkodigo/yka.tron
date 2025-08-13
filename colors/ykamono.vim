@@ -42,24 +42,28 @@ fun! <sid>hi(group, fg, bg, attr)
 endfun
 
 " ==========================
-" Color Variables
+" Color Variables - BASE: #ffd000 - https://www.hslpicker.com/#ffd000
 " ==========================
-" Main text colors
-let s:globalTextColor = {'gui': '#080808', 'cterm256': '232'}
-let s:globalBackgroundColorDark = {'gui': '#121212', 'cterm256': '233'}
+" Light
+let s:globalTextColor = {'gui': '#332a00', 'cterm256': '232'}
+let s:globalBackgroundColor = {'gui': '#fff6cc', 'cterm256': '231'}
+let s:lineNumberColor = {'gui': '#008700', 'cterm256': '234'}
+let s:diffAddBackgroundColor = {'gui': '#008700', 'cterm256': '28'}
+
+" Dark
+let s:globalTextColorDark = {'gui': '#ffd000', 'cterm256': '252'}
+let s:globalBackgroundColorDark = {'gui': '#1a1500', 'cterm256': '233'}
+let s:lineNumberColorDark = {'gui': '#4d3e00', 'cterm256': '246'}
+let s:diffAddBackgroundColorDark = {'gui': '#00af5f', 'cterm256': '35'}
+
 let s:cursorLineBackground = {'gui': '#1c1c1c', 'cterm256': '234'}
 let s:secondaryBackgroundColor = {'gui': '#262626', 'cterm256': '235'}
 let s:statusLineBackgroundColor = {'gui': '#3E3D32', 'cterm256': '237'}
 let s:visualSelectionColor = {'gui': '#49483E', 'cterm256': '239'}
 let s:commentTextColor = {'gui': '#767676', 'cterm256': '243'}
-let s:lineNumberColorDark = {'gui': '#949494', 'cterm256': '246'}
 let s:lineNumberActiveColor = {'gui': '#B0B0B0', 'cterm256': '249'}
 let s:menuTextColor = {'gui': '#C6C6C6', 'cterm256': '251'}
-let s:globalTextColorDark = {'gui': '#D0D0D0', 'cterm256': '252'}
-let s:globalBackgroundColor = {'gui': '#FFFFFF', 'cterm256': '231'}
 let s:diffTextHighlightColor = {'gui': '#5F8787', 'cterm256': '66'}
-let s:diffAddBackgroundColor = {'gui': '#008700', 'cterm256': '28'}
-let s:diffAddBackgroundColorDark = {'gui': '#00af5f', 'cterm256': '35'}
 let s:warningBackgroundColor = {'gui': '#8E700B', 'cterm256': '136'}
 let s:warningTextColor = {'gui': '#D7AF00', 'cterm256': '178'}
 let s:diffChangeBackgroundColor = {'gui': '#5F5F00', 'cterm256': '58'}
@@ -67,7 +71,6 @@ let s:errorTextColor = {'gui': '#D70000', 'cterm256': '160'}
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 
 " Additional aliases for colors that serve multiple purposes
-let s:lineNumberColor = s:cursorLineBackground
 let s:cursorLineBackgroundLight = s:globalTextColorDark
 let s:menuBackgroundColor = s:lineNumberColorDark
 let s:nonTextColor = s:statusLineBackgroundColor
