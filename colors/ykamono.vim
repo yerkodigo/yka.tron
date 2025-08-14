@@ -47,7 +47,7 @@ endfun
 let s:l_fg       = {'gui': '#1A1A1A', 'cterm256': '94'}   " Texto principal (oscuro cálido)
 let s:l_bg       = {'gui': '#E0E0E0', 'cterm256': '231'}  " Fondo principal claro
 let s:l_muted    = {'gui': '#353A3E', 'cterm256': '143'}  " Texto atenuado (comentarios, nontext)
-let s:l_accent   = {'gui': '#ffd000', 'cterm256': '220'}  " Acento principal (amarillo base)
+let s:l_accent   = {'gui': '#353A3E', 'cterm256': '220'}  " Acento principal (amarillo base)
 let s:l_surface  = {'gui': '#BFBFBF', 'cterm256': '229'}  " Superficie sutil (selección suave, cursorline)
 let s:l_danger   = {'gui': '#d70000', 'cterm256': '160'}  " Error/alerta crítica
 

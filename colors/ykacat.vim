@@ -11,9 +11,9 @@
 "
 "      >>> Inspirado en el amarillo de Caterpillar <<<
 "
-" File:       ykamono.vim
+" File:       ykacat.vim
 " Maintainer: Yerko Cortes <yerkodigo@gmail.com>
-" Repository: https://github.com/yerkodigo/ykamono
+" Repository: https://github.com/yerkodigo/ykacolors.vim
 " License:    MIT
 
 scriptencoding utf-8
@@ -23,7 +23,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name="ykamono"
+let g:colors_name="ykacat"
 
 " ==========================
 " Highlighting Function
@@ -47,7 +47,7 @@ endfun
 let s:l_fg       = {'gui': '#2a2300', 'cterm256': '94'}   " Texto principal (oscuro cálido)
 let s:l_bg       = {'gui': '#fffcf0', 'cterm256': '231'}  " Fondo principal claro
 let s:l_muted    = {'gui': '#8a8840', 'cterm256': '143'}  " Texto atenuado (comentarios, nontext)
-let s:l_accent   = {'gui': '#ffd000', 'cterm256': '220'}  " Acento principal (amarillo base)
+let s:l_accent   = {'gui': '#8a8840', 'cterm256': '220'}  " Acento principal (amarillo base)
 let s:l_surface  = {'gui': '#fff2b3', 'cterm256': '229'}  " Superficie sutil (selección suave, cursorline)
 let s:l_danger   = {'gui': '#d70000', 'cterm256': '160'}  " Error/alerta crítica
 
@@ -55,7 +55,7 @@ let s:l_danger   = {'gui': '#d70000', 'cterm256': '160'}  " Error/alerta crític
 let s:d_fg       = {'gui': '#ffd000', 'cterm256': '220'}  " Texto principal en oscuro
 let s:d_bg       = {'gui': '#0f0c00', 'cterm256': '233'}  " Fondo principal oscuro cálido
 let s:d_muted    = {'gui': '#a88f00', 'cterm256': '178'}  " Texto atenuado en oscuro
-let s:d_accent   = {'gui': '#ffd000', 'cterm256': '220'}  " Acento principal en oscuro
+let s:d_accent   = {'gui': '#a88f00', 'cterm256': '220'}  " Acento principal en oscuro
 let s:d_surface  = {'gui': '#3a3000', 'cterm256': '58'}   " Superficie sutil en oscuro
 let s:d_danger   = {'gui': '#ff5f5f', 'cterm256': '203'}  " Error/alerta crítica en oscuro
 

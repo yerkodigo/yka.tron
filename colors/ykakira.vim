@@ -54,8 +54,8 @@ let s:l_danger   = {'gui': '#E55A33', 'cterm256': '160'}  " Error/alerta crític
 " Dark
 let s:d_fg       = {'gui': '#EFE2D2', 'cterm256': '220'}  " Texto principal en oscuro
 let s:d_bg       = {'gui': '#1F1C19', 'cterm256': '233'}  " Fondo principal oscuro cálido
-let s:d_muted    = {'gui': '#A9B6B8', 'cterm256': '178'}  " Texto atenuado en oscuro (comentarios, nontext)
-let s:d_accent   = {'gui': '#ffd000', 'cterm256': '220'}  " Acento principal en oscuro
+let s:d_muted    = {'gui': '#A9B6B8', 'cterm256': '178'}  " Texto atenuado en oscuro (comentarios, nontext) timeHMS
+let s:d_accent   = {'gui': '#D55E42', 'cterm256': '220'}  " Acento principal en oscuro
 let s:d_surface  = {'gui': '#AE5739', 'cterm256': '58'}   " Superficie sutil en oscuro
 let s:d_danger   = {'gui': '#A9B6B8', 'cterm256': '203'}  " Error/alerta crítica en oscuro
 
@@ -140,13 +140,16 @@ else
   call <sid>hi('Cursor',       s:d_bg,      s:d_accent,  'none')
   call <sid>hi('CursorColumn', s:none,      s:d_surface, 'none')
   call <sid>hi('CursorLine',   s:none,      s:d_surface, 'none')
-  call <sid>hi('CursorLineNr', s:d_fg,      s:d_surface, 'none')
   call <sid>hi('Directory',    s:d_fg,      s:none,      'none')
   call <sid>hi('FoldColumn',   s:d_muted,   s:d_bg,      'none')
   call <sid>hi('Folded',       s:d_muted,   s:d_surface, 'none')
   call <sid>hi('IncSearch',    s:d_bg,      s:d_accent,  'none')
   call <sid>hi('Search',       s:d_bg,      s:d_accent,  'none')
-  call <sid>hi('LineNr',       s:d_muted,   s:d_bg,      'none')
+
+  " regla numerica
+  call <sid>hi('LineNr',       s:d_bg,   s:d_accent,  'none')
+  call <sid>hi('CursorLineNr', s:d_accent,      s:d_bg, 'none')
+
   call <sid>hi('MatchParen',   s:d_bg,      s:d_accent,  'bold')
   call <sid>hi('Pmenu',        s:d_fg,      s:d_surface, 'none')
   call <sid>hi('PmenuSel',     s:d_bg,      s:d_accent,  'none')
