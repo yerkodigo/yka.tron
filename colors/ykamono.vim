@@ -54,9 +54,9 @@ let s:l_danger   = {'gui': '#d70000', 'cterm256': '160'}  " Error/alerta crític
 " Dark
 let s:d_fg       = {'gui': '#E0E0E0', 'cterm256': '220'}  " Texto principal en oscuro
 let s:d_bg       = {'gui': '#1A1A1A', 'cterm256': '233'}  " Fondo principal oscuro cálido
-let s:d_muted    = {'gui': '#BFBFBF', 'cterm256': '178'}  " Texto atenuado en oscuro (comentarios, nontext)
-let s:d_accent   = {'gui': '#ffd000', 'cterm256': '220'}  " Acento principal en oscuro
-let s:d_surface  = {'gui': '#353A3E', 'cterm256': '58'}   " Superficie sutil en oscuro (selección suave, cursorline)
+let s:d_muted    = {'gui': '#353A3E', 'cterm256': '178'}  " Texto atenuado en oscuro (comentarios, nontext)
+let s:d_accent   = {'gui': '#353A3E', 'cterm256': '220'}  " Acento principal en oscuro
+let s:d_surface  = {'gui': '#222526', 'cterm256': '58'}   " Superficie sutil en oscuro (selección suave, cursorline)
 let s:d_danger   = {'gui': '#ff5f5f', 'cterm256': '203'}  " Error/alerta crítica en oscuro
 
 let s:none       = {'gui': 'NONE', 'cterm256': 'NONE'}
