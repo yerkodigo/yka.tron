@@ -40,7 +40,7 @@ endfun
 " Color Variables - Light Monochrome Theme
 " ==========================
 let s:fg       = {'gui': '#051f30', 'cterm256': '235'}  " Azul muy oscuro
-let s:bg       = {'gui': '#d5e3e8', 'cterm256': '117'}  " Azul claro brillante
+let s:bg       = {'gui': '#eff4f6', 'cterm256': '117'}  " Azul claro brillante
 let s:surface  = {'gui': '#bdd3db', 'cterm256': '110'}  " Superficie más oscura para contraste
 let s:none     = {'gui': 'NONE', 'cterm256': 'NONE'}
 
