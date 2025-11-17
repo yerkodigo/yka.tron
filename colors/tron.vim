@@ -41,7 +41,7 @@ endfun
 " ==========================
 let s:fg       = {'gui': '#afe9f2', 'cterm256': '159'}  " Cyan retro principal
 let s:bg       = {'gui': '#000000', 'cterm256': '16'}   " Negro puro
-let s:surface  = {'gui': '#0d1a1c', 'cterm256': '233'}  " Superficie sutil (casi negro con tinte)
+let s:surface  = {'gui': '#183136', 'cterm256': '233'}  " Superficie sutil (casi negro con tinte)
 let s:none     = {'gui': 'NONE', 'cterm256': 'NONE'}
 
 " ==========================
